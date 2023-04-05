@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!-- EL CSS sirve para programar aspectos y formatos de nuestra página -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Soy un H1 y soy el titulo mas importante</h1>
+    <h2> Soy un H2</h2>
+    <h3> Soy un H3</h3>
+    <h4> Soy un H2</h4>
+    <h5> Soy un H2</h5>
+    <h6> Soy un H2</h6>
+   
+    <p><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Ea obcaecati, sint dignissimos qui perferendis repellendus! Rerum illum repellendus ad,
+         in a temporibus accusantium laboriosam non repellat, ratione, ullam voluptas tempore.</strong> </p>
+    <br><br><br>
+    <p><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
+         Ea obcaecati, sint dignissimos qui perferendis repellendus! Rerum illum repellendus ad, in a temporibus accusantium laboriosam non repellat, ratione, ullam voluptas tempore.</strong> </p>
+
+    <a href="http://code.visualestudio.com" target="_blank"> Soy un enlace</a>
+
+    <a href="" target="_blank">
+        <img 
+        src="" Alt="Imagen de Lionel Messi"/> <!-- Cuando una de las imagenes no se encuentra dentro de la carpeta donde tenemos el index se puede trazar la ruta al path con ../ para volver atras y se puese concatenar ../../../ -->
+    </a>
+    <hr />
+
+    <h2> Lista desordenada</h2>
+
+    <ul>
+        <li> Hola </li>
+        <li> Hola </li>
+        <li> Hola </li>
+    </ul>
+
+    <h2> Lista ordenada</h2>
+
+    <ol class="lista-desordenada" id="lista-ol"> 
+        <!-- Las clases se pueden repetir pero los id no, son unicos de cada elemento-->
+        <li> Hola </li>
+        <li> Hola </li>
+        <li> Hola </li>
+    </ol>
+
+    <h2> Listas anidadas</h2>
+
+    <Ol>
+        <li> Soy un elemento de una lista ordenada y adentro tengo otra lista
+            <ul>
+                <li> Hola </li>
+                <li> Hola </li>
+                <li> Hola </li>
+            </ul>
+        </li>
+    </Ol>
+
+    <h2>Tablas</h2>
+        <table>
+            <tr><!-- table row-->
+                <!-- table header--> 
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <!-- usar las cosas de tables de w3school en las practicas-->
+            <tr>
+                <!-- Table data-->
+                <td>9hs</td>
+                <td>8hs</td>
+                <td>7hs</td>
+                <td>6hs</td>
+                <td>5hs</td>
+            </tr>
+            <tr>
+                <td>9hs</td>
+                <td>8hs</td>
+                <td>7hs</td>
+                <td>6hs</td>
+                <td>5hs</td>
+            </tr>
+        </table>
+<!-- Elementos que ayudan a estructurar un sitio web div header nav article footer tambien pueden utilizarse div y id o class para decirles que tipo que son. Como funcionamiento es igual pero las etiquetas semanticas para ayudar al seo. Ademas ayuda a identificar al codigo-->
+
+<!-- Tipos de elementos. 
+Hay dos tipos de elementos. Los elementos de bloque y los elementos inline
+Los elementos de bloque son aquellos que ocupan toda la anchura de su contenedor y crean una linea despues de si mismo
+
+Los elementos inline son aquellos que ocupan el espacio necesario para su contenido y no crean un nueva linea despues de si mismo.
+
+Se puede cambiar su comportamiento con CSS
+
+ejemplos: de bloque: h1 h2 h3 p ul li div header nav section article footer
+          inline: a b br span strong img input button label textarea
+-->
+
+        <hr /><!-- Continuando la clase 2-->
+
+        <h2> Formularios </h2> <!-- Son elementos que permiten a los usuarios ingresar datos en sitios web
+        estan compuestos por diferentes tipos de campos que les permiten cumplir su objetivo
+        Los datos ingresados pueden enviarse a servidor para su procesamiento o almacenamiento
+        -->
+        <form>
+            <!-- Input de tipo "text"-->
+            <label for="nombre"> Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre"></input>
+            <br/>
+
+            <label for="apellido"> Apellido:</label>
+            <input type="text" id="apellido" placeholder="Ingrese su apellido"></input>
+            <br/>
+             
+            <!-- importante: la etiqueta input va acompañada de una etiqueta label. El for del label siempre coincide con el id del input-->
+            
+ 
+            <label for="edad"> Edad:</label>
+            <input type="numbrer" id="edad" placeholder="Ingrese su edad"></input>
+            <br/>
+
+            <label for="correo"> Email:</label>
+            <input type="email" id="correo" placeholder="Ingrese su email"></input>
+            <br/>
+
+            <label for="pass"> Contraseña:</label>
+            <input type="password" id="pass" placeholder="Ingrese su Contraseña" required>
+            <br/>
+
+            <label for="checkbox1"> Soy un input del tipo texto:</label>
+            <input type="checkbox" id="checkbox1" >
+            <br/>
+            <br/>
+
+            <label for="checkbox2"> Soy otro input del tipo texto:</label>
+            <input type="checkbox" id="checkbox2" checked >
+            <br/>
+            <br/>
+
+
+            ¿Gusto de helado favorito? <br><br>
+            <input type="radio" name="gustos" id="chocolate">
+            <label for="chocolate" > Chocolate</label>
+            <br/>
+            <br/>
+
+            <input type="radio" name="gustos" id="dulce-de-leche">
+            <label for="dulce-de-leche" > Dulce de leche</label>
+            <br/>
+            <br/>
+
+            <input type="radio" name="gustos" id="limon">
+            <label for="limon" > Limón</label>
+            <br/>
+            <br/>
+
+            ¿Jugamos?
+            <Select>
+                <option value="Piedra">Piedra</option>
+                <option value="Papel">Papel</option>
+                <option value="Tijera">Tijera</option>
+            </Select>
+            <br><br>
+
+            <label for="texto"> Soy un area de texto</label> <br>
+            <textarea id="texto" cols="28" rows="10"></textarea><br><br>
+
+            <input type="submit" value="Sou un boton"/>
+            <button type="submit">Soy otro boton</button>
+            <br><br><br><br>
+        </form>
+        
+
+
+</body>
+</html>

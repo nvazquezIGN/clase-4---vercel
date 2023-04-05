@@ -1,0 +1,247 @@
+<!DOCTYPE html> <!-- Clase 1: etiquetas con HTML-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link> <!-- se puede linkear hojas de CSS. Es para relacionar otro archivo-->
+    <title>Document</title>
+</head>
+
+    <a href="https://www.mercadolibre.com.ar/#from=homecom">Click para redirigir a Meli</a>
+    <a href="https://www.mercadolibre.com.ar/#from=homecom"><button name="soy un boton" type= "button">Soy un botón</button> </a>
+    <!-- type:
+         submit submitea/envia la data al backend
+         reset borra un tipo de informacion
+         button  es solo un boton -->
+    <input type="text">
+    <input type="number">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="text" placeholder="Ingrese su usuario">
+    <!-- importantes para la incorporacion de formularios tiene tipos
+        type
+        text: nombre apellido direccion. Tambien recibe otros tipos como numeros y signos de escritura
+        number: solo recibe números ej DNI 
+        date: fechas
+        email: valida email
+        password: valida contraseñas
+        check box: es un campo de validacion de formularios
+        radio: validacion de un circulo que no permite destildarse
+        placeholder= permite ingresar un texto indicativo del tipo de informacion
+    -->
+        <h1>Soy un titulo</h1>
+        <p> Soy un parrafo</p>
+
+        <label for="DNI" > DNI </label>
+        <input  type="number" 
+                placeholder= "ingrese su DNI"
+                ID="DNI"> <!-- input hr img son etiquetas que no necesitan cerrarse-->
+                <!-- ouput es una etiqueta que envia informacion pero no se utiliza ya que estan desarrolladas otras herramientas-->
+    <br>
+    <br>
+    <h3> Hola </h3>
+    <hr> <!-- linea divisoria-->
+    <audio> <!-- etiqueta para insertar audio--> </audio>
+    <img src= "https://humanidades.com/wp-content/uploads/2018/09/mariposas-1-e1579802223127.jpg" alt="Esto es una mariposa">
+    <form>
+        <!-- sirve para agrupar. En JS varias etiquetas tienen eventos, se puede setear desde un tag de HTML -->
+        <label for="DNI" > DNI </label>
+        <input  type="number" 
+                placeholder= "ingrese su DNI"
+                ID="DNI"> 
+                <!-- ouput es una etiqueta que envia informacion pero no se utiliza ya que estan desarrolladas otras herramientas-->
+                <label for="name" > Nombre </label>
+                <input  type="text" 
+                        placeholder= "Ingrese su nombre"
+                        ID="name"> 
+                <button type="submit">Guardar</button>
+     </form>
+     <section>
+         <!-- marca las diferestes secciones de la portada. es importante para decirle al navegador mi pagina tiene tantas secciones y son importantes al realiza la busqueda de informaciion--> 
+        <div> 
+            <label>
+
+            </label>
+            <imput>
+            <img>
+            <button>Esto es un boton</button>
+            </imput>
+
+        </div>
+        </section>
+
+        <ul> <!-- lista desordenada-->
+            <li>
+                comida
+            </li>
+            <li>
+                detergente
+            </li>
+            <li>
+                comida de gato
+            </li>
+        </ul>
+        <ol> <!-- lista ordenada-->
+            <li>
+            <li>
+                primero
+            </li>
+            <li>
+                segundo
+            </li>
+            <li>
+                tercero
+            </li>
+        </ol>
+        <small>
+            Hace chiquita la fuente
+        </small>
+        <strong>
+            Esto pone en negrita la fuente <!-- Esto tambien da mas relevancia a la hora de poner en el buscador -->
+        </strong>
+        <b> Esto tambien pone negrita la fuente</b>
+        <textarea>
+            <!-- Es un campo del tipo texto pero que permite explayarme de la forma en que quiero-->
+        </textarea>
+        <code> <!-- aca va codigo funciona como un comentario del codig --> aca va codigo </code>
+        <spam> nos encontramos en Cordoba, pero no hacemos entregas por COVID <!-- funciona como un div pero solo para comentarios chiquitos. Algunos lo usar en lugar de un div--></spam>
+        <video>
+
+        </video>
+        <input type="date">
+        <mark>Vean que bueno</mark>
+        <iframe> </iframe>
+
+        <header> <!-- Se explica mas adelante en el video. Es una etiqueta de section pero especial y anticipa al buscador cual es la cabecera de nuestra pagina. Es muy importante ya que con Javascript se puede hacer la funcion para forzar el scroll y que vaya hacia arriba despues de escrollear mucho hacia abajo, dentro de la vista de la página  --> 
+        <nav> <!-- solo agrupa diferentes de cosas y los pone al lado del otro. y pone una linea de diferentes cosas--> </nav>
+            <ul>
+                <a href= "nvsavsjf">Link1</a>
+                <a href= "nvsavsjf">Link2</a>
+                <a href= "nvsavsjf">Link3</a>
+                <button>Soy un boton</button>
+
+            </ul>
+        </header>
+
+        <!-- Minuto 52:00 aprox -->
+
+        <script SRC= "INDEX.JS"></script> <!-- ESTA ES UNA ETIQUETA MUY IMPORTANTE Y SE COLOCA SIEMPRE AL FINAL DEL CODIGO JUSTO ANTES DE CERRAR EL BODY. EN EN SOURCE SE LE PONE DONDE ESTA EL ARCHIVO BUSCA ESTE ARCHIVO EN "./INDEX.JS", LUEGO SE LE COLOCAN OTRAS  POSIBILIDADES COMO EL TIPO DE ARCHIVO QUE ES. LAS EXCEPCIONALIDADES PARA EL SCRIPT. En resumen, levanta el archivo para que el navegador pueda leerlo -->
+        
+        <footer> <!--Al igual que con header se coloca una serie de link que tambien anticipara al buscador. Con CSS luego puede hacerse que vaya al final.  -->
+            <ul>
+                <a href= "nvsavsjf">Link1</a>
+                <a href= "nvsavsjf">Link2</a>
+                <a href= "nvsavsjf">Link3</a>
+                <button>Soy un boton</button>
+            </ul>
+        </footer>
+        <SELECT> <!--Es un agrupador y elr esto son las opciones -->
+            <option>Opción 1</option>
+            <option>Opción 2</option>
+        </SELECT>
+        <s> tacha el texto </s> 
+        <progress></progress>
+        <hr>
+
+
+        <h1>Listado de curso</h1>
+        <table>
+            <tr> <!--marca las distintas filas de una tabla-->
+                <td><b>Curso </b></td> <!-- filas-->
+                <td><b>Horas </b></td>
+                <td><b>Horario</b></td>
+            </tr>
+            <tr> <!--marca las distintas filas de una tabla-->
+                <td>Css </td> <!-- filas-->
+                <td>20 </td>
+                <td>16:00</td>
+            </tr>
+
+            <tr> <!--marca las distintas filas de una tabla-->
+                <td>Html </td> <!-- filas-->
+                <td>20 </td>
+                <td>18:00</td>
+            </tr>
+
+            <tr> <!--marca las distintas filas de una tabla-->
+                 <td>Js</td> <!-- filas-->
+                 <td>60</td>
+                 <td>19:00</td>
+            </tr>
+        </table>
+
+
+        <h2>Su pedido</h2>
+        <table>
+            <tr> <!--marca las distintas filas de una tabla-->
+                <td><b>Nombre producto </b></td> <!-- filas-->
+                <td><b>Precio unitario </b></td>
+                <td><b>Unidades</b></td>
+                <td><b>Subtotal</b></td>
+            </tr>
+            <tr> <!--marca las distintas filas de una tabla-->
+               
+            </tr>
+
+            <tr> <!--marca las distintas filas de una tabla-->
+                <td><b>Reproductor MP3 (80GB)  </b></td> <!-- filas-->
+                <td><b>192.02 </b></td>
+                <td><b>1</b></td>
+                <td><b>192.02</b></td>
+            </tr>
+            
+            <tr> <!--marca las distintas filas de una tabla-->
+                <td><b>Funda de colores</b></td> <!-- filas-->
+                <td><b>2.50 </b></td>
+                <td><b>5</b></td>
+                <td><b>12.50</b></td>
+            </tr>
+            
+            <tr> <!--marca las distintas filas de una tabla-->
+                <td><b>Reproductor de radio & control remoto</b></td> <!-- filas-->
+                <td><b>12.99 </b></td>
+                <td><b>1</b></td>
+                <td><b>12.99</b></td>
+            </tr>
+            
+            <tr> <!--marca las distintas filas de una tabla-->
+                <td><b>TOTAL</b></td> <!-- filas-->
+                <td><b>- </b></td>
+                <td><b>7</b></td>
+                <td><b>207.57</b></td>
+            </tr>
+        </table>
+        
+        <!-- -->
+        <!-- A VECES SE HACE NECESARIO LA FUSION DE LA TABLA, DE UNA COLUMNA O UNA FILA-->
+
+        <H1>Fusion de columnas</H1>
+        <Table>
+            <tr>
+                <td colspan="2"> Primera Columna</td> <!-- colspan es un atributo de esta etiqueta que dice cuantos espacios va a ocupar. Son los dos espacios pero proporcionales al resto. -->
+            </tr>
+            <tr>
+                <td>Segunda Columna</td> 
+                <td>Tercer Columna</td>
+            </tr>
+        </Table>
+
+        <H1>Fusion de filas</H1>
+        <Table>
+            <tr>
+                <td> Primera Columna</td>
+           
+                <td rowspan="2" >Segunda Columna</td> <!-- rawspan es un atributo de esta etiqueta que dice cuantos espacios va a ocupar la fila. Son los dos espacios pero proporcionales al resto. -->
+            </tr>
+            <tr>
+                <td>Tercer Columna</td>
+            </tr>
+        </Table>
+
+
+        <body>
+
+
+
+</html>
